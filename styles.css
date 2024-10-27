@@ -1,0 +1,89 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+}
+
+header {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: hotpink; /* Cor de destaque para o título "GUIMINAMFLIX" */
+}
+
+/* Configuração do container principal */
+main {
+    max-width: 1200px; /* Limita a largura máxima para telas grandes */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo da seção "highlight" (parte roxa) */
+.highlight {
+    width: 100vw; /* Ocupa toda a largura da viewport */
+    margin-left: calc(-50vw + 50%); /* Expande para a borda esquerda */
+    background-color: pink; /* Cor roxa semelhante ao exemplo */
+    padding: 40px 20px;
+    color: white;
+    display: flex; /* Usado para alinhar o conteúdo internamente */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaço entre o texto e o vídeo */
+}
+
+.highlight-text {
+    text-align: left; /* Alinha o texto dentro do contêiner à esquerda */
+    max-width: 50%; /* Limita o espaço para o texto */
+}
+
+.highlight h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.highlight .hashtag {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333; /* Cor mais escura para o texto da hashtag */
+}
+
+/* Estilo do vídeo */
+.highlight .video {
+    text-align: center; /* Centraliza o vídeo */
+    max-width: 50%; /* Limita o espaço para o vídeo */
+}
+
+/* Seção de filmes e séries */
+.movies-series {
+    margin-top: 40px;
+}
+
+.movies-series h3 {
+    font-size: 20px;
+    color: hotpink; /* Destaque azul para o título "Filmes e séries" */
+    text-align: center;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnails img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
